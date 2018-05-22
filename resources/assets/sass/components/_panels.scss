@@ -23,7 +23,7 @@
 	}
 
     &.standout {
-        background-color: $color__salmon;
+        background-color: $color__maya_blue;
         color: #fff;
     }
 
@@ -69,7 +69,7 @@
 	}
 
     &.laracon {
-        background: $color__salmon url('/assets/img/laracon-bg.jpg') center center no-repeat;
+        background: $color__maya_blue url('/assets/img/laracon-bg.jpg') center center no-repeat;
         padding: 60px 0;
         text-align: center;
         box-shadow: 0 0 35px rgba(0,0,0,.3);
@@ -93,7 +93,7 @@
         .btn {
             background: rgba(255,255,255,.85);
             border-radius: 60px;
-            color: $color__salmon;
+            color: $color__maya_blue;
             margin: 10px;
             width: 260px;
             font-size: 18px;
@@ -134,7 +134,7 @@
 					h2 {
 						font-size: 24px;
 						font-weight: 400;
-						color: $color__salmon;
+						color: $color__maya_blue;
 					}
 				}
 				.media {

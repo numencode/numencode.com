@@ -19,7 +19,7 @@ footer.main {
 		font-size: 16px;
 		color: $color__gray;
 		&:hover {
-			color: $color__salmon;
+			color: $color__maya_blue;
 		}
 	}
 
@@ -32,7 +32,7 @@ footer.main {
         font-size: 12px;
 		a {
 			color: $color__gray;
-			&:hover { color: $color__salmon; }
+			&:hover { color: $color__maya_blue; }
 		}
 	}
 
@@ -48,7 +48,7 @@ footer.main {
 
         svg { margin-top: 3px; }
 		&:hover {
-            svg path { fill: $color__salmon; }
+            svg path { fill: $color__maya_blue; }
         }
 	}
 	.dropdown-menu {

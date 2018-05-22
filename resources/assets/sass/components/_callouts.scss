@@ -4,7 +4,7 @@
 
 .callout.rule {
     border-bottom: 1px solid #dee0df;
-    color: $color__salmon;
+    color: $color__maya_blue;
     text-align: center;
     font-family: $font_alt;
     font-size: 13px;
@@ -23,10 +23,9 @@
 }
 
 .callout.minimal {
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
     padding: 15px 30px 20px;
     transition: all .2s ease;
+    text-align: center;
 
     &:hover {
         border-color: transparent;
@@ -59,11 +58,11 @@
 }
 
 .callout.pop {
-    background: $color__salmon;
+    background: $color__maya_blue;
     transition: all .2s ease;
 
     &:hover {
-        background: mix(#000, $color__salmon, 10%);
+        background: mix(#000, $color__maya_blue, 10%);
         box-shadow: 0 2px 7px rgba(0,0,0,.2);
     }
 

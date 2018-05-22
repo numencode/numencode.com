@@ -1,7 +1,7 @@
 .btn {
 	border: none;
 	border-radius: 3px;
-	background: $color__salmon;
+	background: $color__maya_blue;
 	color: #fff;
 	padding: 10px 15px;
 	font-size: 16px;
@@ -10,7 +10,7 @@
 	}
 	&:hover,
 	&:active {
-		background: $color__darker_salmon;
+		background: $color__dodger_blue;
 		color: #fff;
 	}
 }

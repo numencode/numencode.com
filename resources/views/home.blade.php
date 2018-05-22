@@ -3,6 +3,22 @@
 @section('body-class', 'home')
 
 @section('content')
+    <div class="master-head">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>Hi, how can we help you?</h1>
+                    <form>
+                        <input type="text" class="search-field" placeholder="Search documentation ... ">
+                        <button type="submit">
+                            <i class="icon icon-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <nav id="slide-menu" class="slide-menu" role="navigation">
         <div class="brand">
             <a href="/">
@@ -17,39 +33,44 @@
     <section class="hero">
         <div class="container">
 
-            <div class="content">
-                <h1>Love beautiful code? We do too.</h1>
-                <p>The Numencode Content Management System</p>
+            <div class="content text-center">
+                <h1>Numencode Content Management System</h1>
+                <p>The source code is available on GitHub, you can grab it and twist it to your heart’s content!</p>
             </div>
 
-            <div class="callout rule">
-                <span class="text">Start a demo!</span>
-            </div>
+            <div class="callout rule"></div>
 
             <div class="callouts">
                 <a href="/docs/horizon" class="callout minimal third">
-                    <div class="callout-head">
-                        <div class="callout-title">Laravel Horizon</div>
-                        <div class="callout-icon">{!! svg('logo-horizon')!!}</div>
+                    <div class="media-body">
+                        <span class="icon">
+                            <img src="assets/img/icon-documentation.png" alt="">
+                        </span>
+                        <h3 class="p-t-b-20">Help &amp; Documentation</h3>
+                        <p>Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress</p>
                     </div>
-                    <p>Laravel Horizon provides a beautiful dashboard and code-driven configuration for your Redis queues.</p>
                 </a>
                 <a href="/docs/dusk" class="callout minimal third">
-                    <div class="callout-head">
-                        <div class="callout-title">Laravel Dusk</div>
-                        <div class="callout-icon">{!! svg('logo-dusk')!!}</div>
+                    <div class="media-body">
+                        <span class="icon">
+                            <img src="assets/img/icon-settings.png" alt="">
+                        </span>
+                        <h3 class="p-t-b-20">Simple Installation</h3>
+                        <p>Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress</p>
                     </div>
-                    <p>Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. You'll love it.</p>
                 </a>
                 <a href="/docs/broadcasting" class="callout minimal third">
-                    <div class="callout-head">
-                        <div class="callout-title">Laravel Echo</div>
-                        <div class="callout-icon">{!! svg('logo-echo')!!}</div>
+                    <div class="media-body">
+                        <span class="icon">
+                            <img src="assets/img/icon-community.png" alt="">
+                        </span>
+                        <h3 class="p-t-b-20">Community Support</h3>
+                        <p>Unlike other Frameworks which try to cover everything, It has been built specifically for wordpress</p>
                     </div>
-                    <p>Event broadcasting, evolved. Bring the power of WebSockets to your application without the complexity.</p>
                 </a>
             </div>
 
         </div>
     </section>
+
 @endsection

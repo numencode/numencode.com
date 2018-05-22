@@ -30,7 +30,7 @@
 			&:before {
 				content: "# ";
 				margin-right: .25em;
-				color: $color__salmon;
+				color: $color__maya_blue;
 				opacity: .3;
 			}
 			a {
@@ -67,7 +67,7 @@
 			margin-left: -25px;
 			position: absolute;
 			font-size: 28px;
-			color: $color__salmon;
+			color: $color__maya_blue;
 			opacity: .6;
 		}
 	}
@@ -89,12 +89,12 @@
 	a {
 		text-decoration: underline;
 		&:hover {
-			color: darken($color__salmon, 10%);
+			color: darken($color__maya_blue, 10%);
 		}
 	}
 
 	blockquote a:hover {
-		color: lighten($color__salmon, 25%);
+		color: lighten($color__maya_blue, 25%);
 	}
 
 	table {

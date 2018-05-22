@@ -14,36 +14,39 @@
     <link href='https://fonts.googleapis.com/css?family=Miriam+Libre:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ elixir('assets/css/numencode.css') }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,400i,700&amp;subset=latin-ext">
-    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,400i,700&amp;subset=latin-ext">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext">
+    <link rel="apple-touch-icon" href="/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 </head>
-<body class="@yield('body-class', 'docs') language-php">
+<body class="@yield('body-class', 'docs')">
     <span class="overlay"></span>
 
-    <nav class="main">
-        <a href="/" class="brand nav-block">
-            {!! svg('laravel-logo') !!}
-            <span>Numencode</span>
-        </a>
+    <div class="search-section">
+        <div class="container">
+            <nav class="main">
+                <div class="logo">
+                    <a href="/" class="brand nav-block">
+                        {!! svg('numencode-logo') !!}
+                        <strong>numen<span>code</span></strong>
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="main-nav">
+                        @include('partials.main-nav')
+                    </ul>
 
-        <div class="search nav-block invisible">
-            {!! svg('search') !!}
-            <input placeholder="search" type="text" v-model="search" id="search-input" v-on:blur="reset" />
+                    @if (Request::is('docs*') && isset($currentVersion))
+                        @include('partials.switcher')
+                    @endif
+
+                    <div class="responsive-sidebar-nav">
+                        <a href="#" class="toggle-slide menu-link btn">&#9776;</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-
-        <ul class="main-nav" v-if="! search">
-            @include('partials.main-nav')
-        </ul>
-
-        @if (Request::is('docs*') && isset($currentVersion))
-            @include('partials.switcher')
-        @endif
-
-        <div class="responsive-sidebar-nav">
-            <a href="#" class="toggle-slide menu-link btn">&#9776;</a>
-        </div>
-    </nav>
+    </div>
 
     @yield('content')
 
